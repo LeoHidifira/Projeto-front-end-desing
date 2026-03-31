@@ -3,3 +3,28 @@
     margin: 0;
     box-size: border-box
 }
+
+body{
+    background-image:linear-gradient(to left, purple, aqua);
+}
+
+#texto1{
+    color: blue;
+    font-size: 40px;
+    font-family: "Arial";
+}
+#texto2{
+    color: red;
+    font-size: 45px;
+    font-family: "poppins";
+}
+#texto3{
+    color: green;
+    font-size: 50px;
+    font-family: "times new Roman";
+}
+
+.texto{
+    color: purple;
+    font-size: 70px;
+}
