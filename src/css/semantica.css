@@ -1,0 +1,73 @@
+:root{
+    --color1: goldenrod;
+    --color2: purple;
+    --color3: yellow;
+    --color4: blue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color1)
+}
+
+#container{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding:10px;
+}
+
+header{
+    background-color: var(--color2);
+    text-align: center;
+    padding: 20px;
+}
+
+#conteudo-principal{
+    display: flex;  
+    flex-direction: row;
+    gap: 20px;
+    width: 100%
+}
+
+#conteudo{
+    background-color: var(--color3);
+    text-align: center;
+    padding: 100px;
+}
+
+aside{
+    flex: 1;    
+    background-color: var(--color4);
+    padding: 20px;
+}
+
+footer{
+    background-color:var(--color2);
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-with: 700px){
+    #container{
+        flex-direction: column;
+    }
+
+    #conteudo-principal{
+        display: flex;
+        flex-grow: 1; 
+    }
+
+    #conteudo{
+        flex:2;
+    }
+
+    aside{
+        flex:1;
+    }
+}
